@@ -1,0 +1,70 @@
+/* src/Components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .theme-toggle-btn,
+  .logout-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle-btn {
+    background-color: var(--theme-toggle-btn-bg-color);
+    color: var(--theme-toggle-btn-text-color);
+  }
+  
+  .theme-toggle-btn:hover {
+    background-color: var(--theme-toggle-btn-hover-bg-color);
+  }
+  
+  .logout-btn {
+    background-color: var(--logout-btn-bg-color);
+    color: var(--logout-btn-text-color);
+  }
+  
+  .logout-btn:hover {
+    background-color: var(--logout-btn-hover-bg-color);
+  }
+  
+  /* CSS Variables for Theme */
+  :root {
+    --navbar-bg-color: #e86c0d;
+    --navbar-text-color: #fff;
+    --theme-toggle-btn-bg-color: #6c757d;
+    --theme-toggle-btn-text-color: #fff;
+    --theme-toggle-btn-hover-bg-color: #5a6268;
+    --logout-btn-bg-color: #dc3545;
+    --logout-btn-text-color: #fff;
+    --logout-btn-hover-bg-color: #c82333;
+  }
+  
+  .dark-mode {
+    --navbar-bg-color: #333;
+    --navbar-text-color: #f9f9f9;
+    --theme-toggle-btn-bg-color: #555;
+    --theme-toggle-btn-hover-bg-color: #444;
+    --logout-btn-bg-color: #dc3545;
+    --logout-btn-hover-bg-color: #c82333;
+  }
+  
