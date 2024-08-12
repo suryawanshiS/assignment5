@@ -7,6 +7,8 @@ import CartPage from './Components/CartPage';
 import Navbar from './Components/NavBar';
 import './App.css';
 
+
+
 const App = () => {
   const [theme, setTheme] = useState('light');
 
